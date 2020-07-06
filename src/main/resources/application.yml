@@ -6,3 +6,5 @@ spring:
     url: jdbc:oracle:thin:@14.1.76.22:1521:ZHYH
     username: zhyh
     password: zhyh
+mybatis:
+  config-location: classpath:mapper/*.mapper.xml
