@@ -1,6 +1,6 @@
 package com.cpw.sqlview.sqlview.service;
 
-import com.cpw.sqlview.sqlview.Mappers.TablesMapper;
+import com.cpw.sqlview.sqlview.dao.TablesMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
