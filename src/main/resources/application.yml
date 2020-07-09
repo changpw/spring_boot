@@ -1,10 +1,12 @@
 server:
-  port: 8082
+  port: 8083
 spring:
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@14.1.76.22:1521:ZHYH
-    username: zhyh
-    password: zhyh
+    url: jdbc:oracle:thin:@14.1.76.16:1521:TEST
+    username: btop
+    password: btop
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -1,5 +1,7 @@
 package com.cpw.sqlview.sqlview.controller;
 
+import com.cpw.sqlview.sqlview.pojo.StmSerialNumber;
+import com.cpw.sqlview.sqlview.pojo.StmSerialNumberExample;
 import com.cpw.sqlview.sqlview.service.TableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,6 +37,12 @@ public class STMTableSearch {
         System.out.println(id);
         hashMap.put("id",id);
         return hashMap;
+    }
+    @GetMapping(path = "/mainSerial/{Serial}")
+    public List<StmSerialNumber> getSTMSerilaById(@PathVariable String Serial){
+        StmSerialNumberExample stmSerialNumberExample = new StmSerialNumberExample();
+        stmSerialNumberExample.createCriteria().andSerialnumber1Like("%"+Serial+"%");
+        return tableService.getSTMSerilaById(stmSerialNumberExample);
     }
 }
 
