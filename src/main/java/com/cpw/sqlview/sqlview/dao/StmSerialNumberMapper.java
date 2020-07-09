@@ -2,9 +2,8 @@ package com.cpw.sqlview.sqlview.dao;
 
 import com.cpw.sqlview.sqlview.pojo.StmSerialNumber;
 import com.cpw.sqlview.sqlview.pojo.StmSerialNumberExample;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface StmSerialNumberMapper {
     /**
